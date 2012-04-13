@@ -1,0 +1,1 @@
+var fortunes = require('./fortunes.arr');
