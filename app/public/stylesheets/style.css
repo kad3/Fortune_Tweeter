@@ -1,8 +1,76 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+	font: 100%, "Avenir", sans-serif;
+	background-color:#eeeeed;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+#top_bar{
+	background-image:url('../images/logo.png');
+	background-repeat:no-repeat;
+	background-position:10px 12px;
+	margin-top:-1px;
+	padding:0px;
+	min-width:100%;
+	height: 60px;
+	background-color:#2b2a27;
+	border-bottom:2px solid #0593d0;
+
+}
+
+#form {
+	padding-top:2px;
+	margin-left:700px;
+
+}
+
+#nav {
+	margin-top:200px;
+	width:200px;
+	height:300px;
+	background-color:#2b2a27;
+	float:left;
+	
+}
+
+#main{
+
+	width:100%;
+	height:600px;
+
+	
+}
+
+#live_feed{
+
+	width:100%;
+	height:100%;
+	margin-left:400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+	width:100%;
+	height:300px;
+	background-color:#0593d0;
+
 }
