@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Twitter Link Monster</title>
+	<title>Tweeter Fortune Teller</title>
 	<meta name="" content="">
 	<meta name="" content="">
 
 
 
 	<link href='../public/stylesheets/style.css' rel="stylesheet">
+	<!--link href="../public/stylesheets/local_bootstrap.css" rel="stylesheet"!-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src='/javascripts/script.js'></script>
+	<script src='../public/javascripts/script.js'></script>
+	<!-- <script src="http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js"></script> -->
 
 
 </head>
@@ -19,37 +21,130 @@
 <body>
 
 	<div id="top_bar">
-			<form id="form">
-				<p></p>
-				<input id="searchterm"/>
-				<input type="submit" id="btn" value="Go!"/>
-			</form>
+		<form id="form">
+			<p></p>
+			<input id="searchterm"/>
+			<input type="submit" id="btn" value="search"/>
+		</form>
+	</div>
+	<div id="nav">  
+		<ul class="accordion">
+			<ul class="accordion">
+
+						<li id="one" class="files">
+
+							<a href="#one">home</a>
+
+					
+						</li>
+
+						<li id="two" class="mail">
+
+							<a href="#two">about</a>
+
+							<ul class="sub-menu">
+
+								<li><a href="#">guidelines</a></li>
+
+							
+
+							</ul>
+
+						</li>
+
+						<li id="three" class="cloud">
+								<a href="#four">contact</a>
+
+								<ul class="sub-menu">
+
+
+
+									<li><a href="#">contact admin</a></li>
+
+
+								</ul>
+							
+
+							
+						</li>
+
+						<li id="four" class="sign">
+							<a href="#three">members</a>
+
+							<ul class="sub-menu">
+								
+								<li><a href="#">add a fortune</a></li>
+
+								<li><a href="#">fortune bank</a></li>
+	
+								<li><a href="#">rules</a></li>
+
+			
+
+							</ul>
+							
+
+						
+						</li>
+
+					</ul>
+			
 	</div>
 	<div id="main">
-		<div id="nav">  
+		<div id="fortune_img">
+		</div>
+		<div id="content">
+
+			<h3>Do you have what it takes to become a Tweeter Fortune Teller?<br />
+				<h1>Yes! </h1><span class="emphasis"> You most certainly do!</span></h3><br /><br />
+				<h1><span class="blue">Become a member</span> and help make Twitter</h1><br /><br />
+				<h1>an <span class="emphasis">even more </span>FUN and MAGICAL place.</h1><br /><br /><br /><br />
+				<div id="action">
+					
+					<button id="action_btn"class="log_in"><a href=''>Log In</a></button>
+					<button id="action_btn"class="sign_up"><a href=''>Sign Up!</a></button>
+
+				
+				</div>
+
+
+
+
+			</div>	
+
+
+
+
+
+
+		</div>
+		<div id="feed_banner">
+			<p>fortunes going out LIVE!</p>
+			<h1>@ fortune feed </h1>
+		</div>
+		<div id="live_feed">
+
 			<ul>
-				<a href=''><li>about</li></a>
-				<a href=''><li>contact</li></a>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+				<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
 			</ul>
 		</div>
-		<h1></h1>
-		<h2></h2>
-
-
-
-		
-
-	</div>
-	<div id="live_feed">
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-		<p>@semmypurewall 'you will soon witness a miracle'</p>
-	</div>
-	<div id="footer">
-	</div>
+		<div id="footer">
+		</div>
 
 
 
@@ -58,6 +153,6 @@
 
 
 
-</body>
+	</body>
 
-</html>
+	</html>
