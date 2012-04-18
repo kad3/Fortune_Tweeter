@@ -1,0 +1,50 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'socketio' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/vagrant/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /home/vagrant/app/package.json
+verbose loadDefaults application-name@0.0.1
+verbose caching /home/vagrant/app/node_modules/request/package.json
+verbose caching /home/vagrant/app/node_modules/ejs/package.json
+verbose caching /home/vagrant/app/node_modules/oauth/package.json
+verbose caching /home/vagrant/app/node_modules/redis/package.json
+verbose caching /home/vagrant/app/node_modules/twit/package.json
+verbose caching /home/vagrant/app/node_modules/express/package.json
+verbose from cache /home/vagrant/app/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'socketio', null ]
+silly cache add: name, spec, args [ undefined, 'socketio', [ 'socketio', null ] ]
+verbose parsed url { pathname: 'socketio', path: 'socketio', href: 'socketio' }
+verbose addNamed [ 'socketio', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'socketio', '', false ]
+verbose raw, before any munging socketio
+verbose url resolving [ 'https://registry.npmjs.org/', './socketio' ]
+verbose url resolved https://registry.npmjs.org/socketio
+http GET https://registry.npmjs.org/socketio
+ERR! Error: failed to fetch from registry: socketio
+ERR!     at /usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:209:10)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at CleartextStream.<anonymous> (http.js:1137:11)
+ERR!     at CleartextStream.emit (events.js:67:17)
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Linux 2.6.32-33-generic
+ERR! command "node" "/usr/local/bin/npm" "install" "socketio"
+ERR! cwd /home/vagrant/app
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: socketio
+verbose exit [ 1, true ]
