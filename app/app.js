@@ -5,7 +5,9 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , randomTweeter = require('./random_tweeter.js');
+  , rtweeter = require('./random_tweeter.js');
+
+var randomTweeter = new rtweeter(21600);
 
 var app = module.exports = express.createServer();
 
@@ -18,8 +20,6 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
-
-  randomTweeter.intervalTweet(21600);
 });
 
 app.configure('development', function(){
