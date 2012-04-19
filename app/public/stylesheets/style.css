@@ -7,7 +7,7 @@ body {
 }
 
 a {
-	color: white;
+	color: #f5f5f5;
 	text-decoration:none;
 }
 
@@ -25,16 +25,42 @@ a {
 }
 
 #form {
-	padding-top:2px;
+	padding-top:17px;
 	float:right;
 	padding-right:50px;
+}
+#form p{
+	margin:0;
+	padding-top:5px;
+	padding-left:157px;
+	font-size:55%;
+	color:#fff;
 
+}
+.logIn{
+	outline:none;
+	width:130px;
+	height:20px;
+	border-radius:1em 1em 1em 1em;
+	margin-right:10px;	
+	border:none;
+	padding-left:5px;
+	
+}
+
+.logIn_topbar_btn{
+	cursor:pointer;
+	width:50px;
+	height:20px;
+	border-radius:1em 1em 1em 1em;
+	background-color:#0593d0;
+	border:none;
 }
 
 #nav {
-	margin-top:155px;
+	margin-top:170px;
 	width:200px;
-	height:272px;
+	height:100%;
 	background-color:#2b2a27;
 	float:left;
 	
@@ -90,10 +116,8 @@ a {
 	
 }
 
-#action_btn{
-
+.modalInput{
 	border-radius:1em 1em 1em 1em;
-
 	font-size:140%;
 	letter-spacing:1px;
 	background-color:#2b2a27;
@@ -104,16 +128,14 @@ a {
 	cursor:pointer;
 }
 
-.sign_up .log_in, a:hover {
+#sign_up #log_in, a:hover {
 	color:#0593d0;
 }
-.sign_up{
-
+#log_in{
 	float:right;
 }
 
-.log_in{
-
+#sign_up{
 	float:left;
 }
 
@@ -173,12 +195,11 @@ a {
 	color:#a6a6a6;
 	letter-spacing:2px;
 	font-size:180%;
-	font-weight:100;
+	font-weight:500;
 	
 }
 
 .tweet{
-
 	margin-left:60px;
 	
 	
@@ -187,7 +208,6 @@ a {
 
 
 #footer{
-
 	width:100%;
 	height:300px;
 	background-color:#0593d0;
@@ -217,22 +237,20 @@ a {
 	display: block;
 	position: relative;
 	min-width: 110px;
-	padding: 5px 10px 0 40px;
-	height: 40px;
-
-	color: #fdfdfd;
-	font: 12px/32px Arial, sans-serif;
+	padding: 18px 0 0 40px;
+	height: 30px;
+	color: #a6a6a6;	
+	font: 90% "Avenir",sans-serif;
+	letter-spacing:1px;
 	text-decoration: none;
+	border-bottom:1px solid #a6a6a6;
 
-
-
-
-	-webkit-box-shadow: inset 0px 2px 0px 0px rgba(255,255,255, .1), 0px 2px 0px 0px rgba(0,0,0, .1);
-	-moz-box-shadow: inset 0px 2px 0px 0px rgba(255,255,255, .1), 0px 2px 0px 0px rgba(0,0,0, .1);
-	box-shadow: inset 0px 2px 0px 0px rgba(255,255,255, .1), 0px 2px 0px 0px rgba(0,0,0, .1);
 }
 
-.accordion > li:hover > a,
+.accordion > li:hover > a{
+	color:#fff;
+}
+
 .accordion > li:target > a,
 .accordion > li > a.active {
 	color:#0593d0;
@@ -247,18 +265,13 @@ a {
 	top: 7px;
 	right: 0;
 	padding: 0 10px;
-	margin-right: 10px;
-	
-	font: normal bold 12px/18px Arial, sans-serif;
-	background: #404247;
-	
+	margin-right: 10px;	
+	font:  12px/18px ,"Avenir", sans-serif;
+	background: #404247;	
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
-	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
-	box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
 }
 
 .accordion > li:hover > a span,
@@ -276,10 +289,9 @@ a {
 /* Sub Menu */
 
 .sub-menu li a {
-	color: #797979;
+	color: #a6a6a6;
 	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
-
-	background: #e5e5e5;
+	background: #eeeeed;
 	border-bottom: 2px solid #c9c9c9;
 
 	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
@@ -287,7 +299,7 @@ a {
 	box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
 }
 
-.sub-menu li:hover a { background: #efefef; }
+.sub-menu li:hover a { background: #fff; }
 
 .sub-menu li:last-child a { border: none; }
 
@@ -302,7 +314,7 @@ a {
 	left: 0;
 	margin-left: 14px;
 	color: #a6a6a6;
-	font: normal 10px/32px Arial, sans-serif;
+	font: normal 10px/32px "Avenir", sans-serif;
 }
 
 /* Functionality */
@@ -315,6 +327,29 @@ a {
 	display: block;
 }
 
+/*modal*/
+.modal {
+    background-color:#fff;
+    display:none;
+    width:350px;
+    padding:15px;
+    text-align:left;
+    border:2px solid #333;
+ 
+    opacity:0.8;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+  }
+ 
+  .modal h2 {
+    background:url(/media/img/global/info.png) 0 50% no-repeat;
+    margin:0px;
+    padding:10px 0 10px 45px;
+    border-bottom:1px solid #333;
+    font-size:20px;
+  }
 
 
 
