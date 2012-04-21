@@ -4,8 +4,7 @@
  */
 
 exports.index = function(req, res){
-  // res.render('index', { title: 'Express' })
-  res.send('sup.');
+  res.render('index', { title: 'Tweeter Fortune Teller' })
 };
 
 exports.add_fortune = function(req, res) {
