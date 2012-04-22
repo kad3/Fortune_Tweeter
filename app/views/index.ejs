@@ -61,8 +61,31 @@
 				<h1>@ fortune feed </h1>
 			</div>
 			<div id="live_feed">
-
-				<ul>
-               <%- tweets ->
-				</ul>
-              </div>
+           <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+           <script>
+             new TWTR.Widget({
+               version: 2,
+               type: 'profile',
+               rpp: 15,
+               interval: 30000,
+               width: 'auto',
+               height: 650,
+               theme: {
+                 shell: {
+                   background: '#333333',
+                   color: '#ffffff'
+                 },
+                 tweets: {
+                   background: '#eeeeed',
+                   color: '#000000',
+                   links: '#a6a6a6'
+                 }
+               },
+               features: {
+                 scrollbar: false,
+                 loop: false,
+                 live: true,
+                 behavior: 'all'
+               }
+             }).render().setUser('FortuneTest').start();
+          </div>

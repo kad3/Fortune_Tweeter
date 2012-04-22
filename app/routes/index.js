@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Tweeter Fortune Teller', tweets: '' })
+  res.render('index', { title: 'Tweeter Fortune Teller'})
 };
 
 exports.add_fortune = function(req, res) {
