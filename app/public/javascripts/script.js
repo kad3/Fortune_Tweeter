@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+
+	
+	
 
 			// accordion menu
 			
@@ -29,7 +33,7 @@ $(document).ready(function() {
 			});
 			
 			//modal
-			var triggers = $(".modalInput").overlay({
+			var triggers = $(".modalLogIn, .modalSignUp").overlay({
 
 			      // some mask tweaks suitable for modal dialogs
 			      mask: {
@@ -41,14 +45,7 @@ $(document).ready(function() {
 			      closeOnClick: false
 			  });
 
-			// var buttons = $("#yesno button").click(function(e) {
-			// 
-			// 			      // get user input
-			// 			      var yes = buttons.index(this) === 0;
-			// 
-			// 			      // do something with the answer
-			// 			      triggers.eq(0).html("You clicked " + (yes ? "yes" : "no"));
-			// 			  });
+	
 			 $("#prompt form").submit(function(e) {
 
 			      // close the overlay

@@ -4,11 +4,19 @@ body {
 	font-family:"Avenir", sans-serif;
 	font-size:100%;
 	background-color:#eeeeed;
+
 }
 
 a {
 	color: #f5f5f5;
 	text-decoration:none;
+}
+
+#container{
+	width:1200px;
+	height:100%;
+	margin:0 auto;
+
 }
 
 /*top bar--------------------------------*/ 
@@ -19,17 +27,33 @@ a {
 	background-position:10px 10px;
 	margin-top:-1px;
 	padding:0px;
-	min-width:100%;
+	min-width:1200px;
 	height: 60px;
 	background-color:#2b2a27;
 	border-bottom:2px solid #0593d0;
+	overflow:auto;
+
 
 }
 
+.logo{
+	float:left;
+	width:300px;
+	height:100%;
+	cursor:pointer;
+}
+
+
 #form, .user_bar{
+	margin-right:50px;
 	padding-top:17px;
 	float:right;
-	padding-right:50px;
+
+	
+}
+#user{
+	padding-top:13px;
+
 }
 #form p{
 	margin:0;
@@ -39,9 +63,28 @@ a {
 	color:#fff;
 
 }
-.user_bar p{
+.user_bar p {
+	color:#fff;
 	font-size:75%;
-	padding-right:50px;
+	padding-right:10px;
+	margin-top:0px;
+
+}
+
+#username{
+	font-size:120%;
+	color:#feecb3;
+	padding-right:30px;
+	padding-left:10px;
+	
+}
+
+.userlevel_display {
+	font-size:60%;
+	font-weight:200;	
+	color:#fff;
+	letter-spacing:1px;
+	
 }
 .logIn{
 	outline:none;
@@ -67,10 +110,12 @@ a {
 
 #nav {
 	margin-top:170px;
+
 	width:200px;
 	height:100%;
 	background-color:#2b2a27;
 	float:left;
+	clear:both;
 	
 }
 
@@ -82,8 +127,41 @@ a {
 	padding:0px 0px 0px 15px;
 	margin-top:8px;
 	color:#57554f;
+	float:left;
 }
 
+
+
+#main_dashboard{
+	background-image:url('../images/small_logo.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin: 0 auto;
+	height:100%;
+	width:900px;
+	padding-top:10px;
+
+
+}
+
+#main_dashboard h1{
+	text-align:center;	
+	margin-top:17px;
+	letter-spacing:1px;
+	
+}
+
+#dashboard_fortune_img{
+	width:230px;
+	height:107px;
+	background-image:url('../images/dashboard_fortune.png');
+	background-repeat:no-repeat;
+	margin-left: 492px;
+    margin-top: -52px;
+	
+
+	
+}
 
 #main{
 	background-image:url('../images/twitter_bird.png');
@@ -91,7 +169,9 @@ a {
 	background-position:top center;
 	margin: 0 auto;
 	height:100%;
-	width:1200px;
+	width:100%;
+
+
 
 }
 
@@ -101,21 +181,39 @@ a {
 	float:right;
 	background-image:url('../images/fortune.png');
 	background-repeat:no-repeat;
-	padding-right:280px;
-	margin-top:20px;
+	padding-right:290px;
+	margin-top:-35px;
 	
 }
 #content{
 	margin:0 auto;
 	text-align:center;
 	padding-top:160px;
-	width:900px;
-	min-height:375px;
+	width:800px;
+	min-height:400px;
+
 	
+}
+#dashboard_content{
+	margin:0 auto;
+	margin-left:30px;
+	padding-top:50px;
+	width:1000px;
+	min-height:300px;
+	padding-left:35px;
+	padding-bottom:50px;
+/*	border-bottom:2px dashed #0593d0;*/
 }
 #content h1{
 	display:inline;
 	margin-bottom:-50px;
+	
+}
+#stats h3{
+	font-size:90%;
+	margin-bottom:50px;
+	padding-bottom:5px;
+	border-bottom:1px dashed #0593d0;
 	
 }
 
@@ -124,8 +222,42 @@ a {
 	height:20px;
 	width:400px;
 
-	
 }
+
+.my_row{
+	min-width:900px;
+	margin:0 auto;
+}
+/*twitter bootstrap--------------------------------*/
+
+.row{margin-left:-20px;}.row:before,.row:after{display:table;content:"";}
+.row:after{clear:both;}
+.row>[class*="span"]{display:inline;float:left;margin-left:20px;}
+.span1{width:40px;}
+.span2{width:100px;}
+.span3{width:160px;}
+.span4{width:220px;
+		min-height:300px;
+		padding-right:30px;
+		line-height:150%;
+		border-right:2px dashed #fff ;	
+	}
+
+.span5{width:280px;
+		min-height:300px;
+		padding-right:50px;
+		line-height:150%;
+		}
+
+.span6{width:340px;}
+.span7{width:400px;}
+.span8{width:460px;}
+.span9{width:520px;}
+.span10{width:580px;}
+.span11{width:640px;
+		min-height:300px;
+
+		}
 
 /*create fortune*/
 
@@ -136,7 +268,7 @@ a {
 .create_fortune_field{
 	
 	margin-top:30px;
-	margin-bottom:100px;
+	padding-bottom:200px;
 	
 }
 .create_fortune_field h1{
@@ -171,11 +303,21 @@ textarea{
 	font-style:italic;
 }
 
+.white{
+	color:#fff;
+	
+}
 
+.yellow{
+	color:#feebae;
+}
+.signature{
+	margin-top:-15px;
+}
 /*modal--------------------------------*/
 
 
-.modalInput{
+.modalLogIn, .modalSignUp{
 	border-radius:1em 1em 1em 1em;
 	font-size:140%;
 	letter-spacing:1px;
@@ -205,12 +347,49 @@ textarea{
 #feed_banner{
 	width:340px;
 	height:400px;
+	margin-top:0px;
 	background-image:url('../images/fortune_feed.png');
 	background-repeat:no-repeat;
 	background-position:0 -10px;
 	float:left;
-	
 
+}
+#sm_feed_banner{
+	margin-top:20px;
+	margin-left:-4px;
+	width:286px;
+	height:122px;
+	background-image:url('../images/small_fortune_feed.png');
+	background-repeat:no-repeat;
+	background-position:0 0px;
+	float:left;
+}
+#sm_live_feed{
+	margin-top:30px;
+	font-size:75%;
+	min-width:350px;
+	max-width:450px;
+	min-height:300px;
+	padding-top:0px;
+	margin-left:260px;
+	padding-bottom:200px;
+	font-family:"Garamond", serif;
+}
+#sm_feed_banner p{
+	color:white;
+	font-size:60%;
+	font-style:italic;
+	margin-left:20px;
+	margin-top:15px;
+	
+}
+#sm_feed_banner h1{
+	font-size:180%;
+	font-weight:100;
+	letter-spacing:2px;
+	margin-left:14px;
+	margin-top:20px;
+	
 }
 
 #feed_banner p{
@@ -220,7 +399,6 @@ textarea{
 	margin-left:20px;
 	margin-top:10px;
 	
-	
 }
 #feed_banner h1{
 	font-weight:100;
@@ -228,14 +406,14 @@ textarea{
 	margin-left:17px;
 	margin-top:25px;
 	
-	
 }
 
 
 #live_feed{	
+	min-width:500px;
 	max-width:500px;
 	min-height:500px;
-	padding-top:0px;
+	margin-top:10px;
 	margin-left:400px;
 	padding-bottom:200px;
 	font-family:"Garamond", serif;
@@ -245,11 +423,18 @@ textarea{
 	list-style:none;
 }
 
+#sm_live_feed ul{
+		list-style:none;
+}
+
 #live_feed li{
 	padding:5px;
 	
 }
-
+#sm_live_feed  li{
+	padding:5px;
+	
+}
 .user{
 	margin-bottom:8px;
 	color:#a6a6a6;
@@ -312,27 +497,22 @@ textarea{
 }
 
 .accordion li > a span {
+	color:#2b2a27;
 	display: block;
 	position: absolute;
-	top: 7px;
+	top: 13px;
 	right: 0;
-	padding: 0 10px;
+	padding: 5px 10px;
 	margin-right: 10px;	
-	font:  12px/18px ,"Avenir", sans-serif;
-	background: #404247;	
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	font: 90% "Avenir",sans-serif;
+	background: #feebae;	
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius:50px;
 
 }
 
-.accordion > li:hover > a span,
-.accordion > li:target > a span,
-.accordion > li > a.active span {
-	color: #fdfdfd;
-	text-shadow: 0px 1px 0px rgba(0,0,0, .35);
-	background: #3e5706;
-}
+
 
 
 
@@ -404,15 +584,103 @@ textarea{
   }
 
 /*footer--------------------------------*/
-
-#footer{
-	width:100%;
-	height:300px;
-	background-color:#0593d0;
+.my_span10{
 
 }
 
+.my_span10 h3{
+	color:#fff;
+	margin-left:40px;
+	font-weight:900;
+	padding-bottom:10px;
+	margin-top:40px;
+	border-bottom:1px dashed #fff;
+}
+.social_icons{
+	margin-left:600px;
+	width:600px;
+	height:100px;
+	margin-top: -300px;
+	
+}
 
+.facebook {
+	margin-left:30px;
+	float:left;
+	width:50px;
+	height:50px;
+	background-image:url('../images/facebook.png');
+}
+
+.twitter{
+	margin-top:-10px;
+	margin-left:6px;
+	float:left;
+	width:80px;
+	height:80px;
+	background-image:url('../images/twitter.png');
+
+}
+
+.linkedin{
+	margin-top:2px;
+	margin-left:23px;
+	float:left;
+	width:50px;
+	height:50px;
+	background-image:url('../images/linked_in.png');
+
+}
+.github{
+	margin-top:-14px;
+	margin-left:19px;
+	float:left;
+	width:80px;
+	height:80px;
+	background-image:url('../images/github.png');
+
+}
+
+.footer_tags{
+	padding-right:20px;
+	color:#fff;
+	font-weight:200;
+}
+#footer_tags{
+	margin-left:39px;
+}
+
+.footer_tags a:hover {
+	color:#feebae;
+	
+}
+
+#footer{
+
+	width:100%;
+	height:500px;
+	background-color:#0593d0;
+
+}
+.footer_row{
+	background-image:url('../images/twitter_bird.png');
+	background-repeat:no-repeat;
+	background-position:50px 50px;
+	height:100%;
+	
+}
+.footer_row h2{
+	color:#fff;
+  	margin-left: 101px;
+    margin-top: 201px;
+	max-width:450px;
+}
+
+.footer_row h5{
+	margin-left: 101px;
+	margin-top: 50px;
+	font-weight:200;
+}
 
 
 

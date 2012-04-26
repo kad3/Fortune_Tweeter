@@ -22,82 +22,94 @@
 
 
 	<div id="top_bar">
+		<span class="logo"><a href=""></a></span>
 		<div id="user" class="user_bar">
-			<p><span><a href=""> settings</a><span class="blue"> |</span></span>
-			<span><a href=""> log out</a></span></p>
+			<span class="userlevel_display">Level <span class="blue">4 </span>fortune teller </span>
+			<p><span>  Hello,<span id="username">fountaineleven</span></span><span><a href=""> settings</a><span class="blue"> |</span></span>
+				<span><a href=""> log out</a></span></p>
+			</div>
 		</div>
-	</div>
-	<p class="tagLine">brightening our follower's days- one fortune at a time</p>
-	<div id="nav">  
-		<ul class="accordion">
+		<p class="tagLine">brightening our follower's days- one fortune at a time</p>
+		<div id="nav">  
 			<ul class="accordion">
-				<li id="one" class="files">
-					<a href="#one">home</a>
-				</li>
-				<li id="two" class="mail">
-					<a href="#two">about</a>
-					<ul class="sub-menu">
-						<li><a href="#">guidelines</a></li>
-						<li><a href="#">our story</a></li>
-					</ul>
-				</li>
-				<li id="three" class="cloud">
-					<a href="#four">contact</a>
-				</li>
-				<li id="four" class="sign">
-					<a href="#three">@tfortuneteller</a>
-				</li>
-			</ul>
+				<ul class="accordion">
+					<li id="one" class="">
+						<a href="#one">my dashboard</a>
+					</li>
+					<li id="two" class="">
+						<a href="#two">create a fortune</a>
 
-		</div>
-		<div id="main">
-		
-			<div id="content">
+					</li>
+					<li id="three" class="">
+						<a href="#three">answer a question<span id="questions_waiting">2</span></a>
 
-				<div class="create_fortune_field"><h1 class="blue">create a fortune!</h1><br /><br />
-				<h3>enter fortune here</h3>
-				<textarea id="fortune_enter"rows="10" cols="30">
-				
-				</textarea>
-				
-					<div id="action">
-
-						<button class="create_fortune_btn" id="fortuneCreate_btn" rel=""><a href=''>create fortune</a></button>
-				
-					</div>
-				</div>
-					
-
-				</div>	
-
-			</div>
-			<div id="feed_banner">
-				<p>fortunes going out LIVE!</p>
-				<h1>@ fortune feed </h1>
-			</div>
-			<div id="live_feed">
-
-				<ul>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-					<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-					<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
+					</li>
+					<li id="four" class="">
+						<a href="#four">members</a>
+						<ul class="sub-menu">
+							<li><a href="#">rules</a></li>
+							<li><a href="#">helpful suggestions</a></li>
+						</ul>
+					</li>
+					<li id="five" class="">
+						<a href="#three">@tfortuneteller</a>
+					</li>
 				</ul>
+
+			</div>
+			<div id="container">
+				<div id="main">
+
+					<div id="content">
+
+						<div class="create_fortune_field"><h1 class="blue">create a fortune!</h1><br /><br />
+							<h3>enter fortune here</h3>
+							<textarea id="fortune_enter"rows="10" cols="30">
+
+							</textarea>
+
+							<div id="action">
+
+								<button class="create_fortune_btn" id="fortuneCreate_btn" rel=""><a href=''>create fortune</a></button>
+
+							</div>
+						</div>
+
+
+					</div>	
+
+				</div>
+
+
 			</div>
 			<div id="footer">
+				<div class="row footer_row">
+
+					<span class="span11">
+						<p><h2>Our mission is to make Twitter a better place, one fortune at a time.</h2></p>
+						<p><h5>&copy;2012 Tweeter Fortune Teller</h5></p>
+						<div class="span8 my_span10">
+
+
+							<div class="social_icons">
+								<p id="footer_tags"><span class="footer_tags"><a href="">about </a> </span><span class="footer_tags"><a href=""> terms & conditions </a></span><span class="footer_tags"><a href=""> contact us </a></span></p>
+								<h3>follow us on the web</h3>
+								<a alt="facebook.com"title="facebook" target="_blank" href="http://www.facebook.com"class="facebook"></a>
+								<a alt="twitter.com"title="twitter" target="_blank" href="http://www.twitter.com"class="twitter"></a>
+								<a alt="linkedin.com"title="linked in" target="_blank" href="http://www.linkedin.com"class="linkedin"></a>
+								<a alt="github.com"title="git hub" target="_blank" href="http://www.github.com"class="github"></a>
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
 			</div>
+
+
 
 
 
