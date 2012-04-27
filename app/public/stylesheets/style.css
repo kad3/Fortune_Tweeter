@@ -30,7 +30,7 @@ a {
 	min-width:1200px;
 	height: 60px;
 	background-color:#2b2a27;
-	border-bottom:2px solid #0593d0;
+	border-bottom:4px solid #0593d0;
 	overflow:auto;
 
 
@@ -45,7 +45,7 @@ a {
 
 
 #form, .user_bar{
-	margin-right:50px;
+	margin-right:15px;
 	padding-top:17px;
 	float:right;
 
@@ -58,7 +58,7 @@ a {
 #form p{
 	margin:0;
 	padding-top:5px;
-	padding-left:157px;
+	padding-left:139px;
 	font-size:55%;
 	color:#fff;
 
@@ -88,10 +88,10 @@ a {
 }
 .logIn{
 	outline:none;
-	width:130px;
+	width:112px;
 	height:20px;
 	border-radius:1em 1em 1em 1em;
-	margin-right:10px;	
+	margin-right:7px;	
 	border:none;
 	padding-left:5px;
 	
@@ -109,13 +109,13 @@ a {
 /*nav --------------------------------*/ 
 
 #nav {
-	margin-top:170px;
-
+	margin-top:150px;
 	width:200px;
 	height:100%;
 	background-color:#2b2a27;
 	float:left;
 	clear:both;
+
 	
 }
 
@@ -133,20 +133,24 @@ a {
 
 
 #main_dashboard{
-	background-image:url('../images/small_logo.png');
+	background-image:url('../images/medium_logo.png');
 	background-repeat:no-repeat;
-	background-position:top center;
+	background-position:47% top;
 	margin: 0 auto;
-	height:100%;
+	min-height:500px;
 	width:900px;
 	padding-top:10px;
 
 
 }
 
+#main_dashboard h3{
+	margin-top:10px;
+}
+
 #main_dashboard h1{
 	text-align:center;	
-	margin-top:17px;
+	margin-top:50px;
 	letter-spacing:1px;
 	
 }
@@ -156,59 +160,47 @@ a {
 	height:107px;
 	background-image:url('../images/dashboard_fortune.png');
 	background-repeat:no-repeat;
-	margin-left: 492px;
+	margin-left: 475px;
     margin-top: -52px;
-	
-
-	
+		
 }
-
-#main{
-	background-image:url('../images/twitter_bird.png');
-	background-repeat:no-repeat;
-	background-position:top center;
-	margin: 0 auto;
-	height:100%;
-	width:100%;
-
-
-
-}
-
 #fortune_img{
-	width:204px;
-	height:106px;
-	float:right;
+	width:238px;
+	height:100px;
 	background-image:url('../images/fortune.png');
 	background-repeat:no-repeat;
-	padding-right:290px;
-	margin-top:-35px;
+	margin-left: 475px;
+    margin-top: -52px;
 	
 }
-#content{
+
+#create_fortune_content{
 	margin:0 auto;
 	text-align:center;
-	padding-top:160px;
+	padding-top:10px;
 	width:800px;
 	min-height:400px;
-
 	
 }
 #dashboard_content{
 	margin:0 auto;
 	margin-left:30px;
-	padding-top:50px;
+	padding-top:30px;
 	width:1000px;
 	min-height:300px;
 	padding-left:35px;
 	padding-bottom:50px;
-/*	border-bottom:2px dashed #0593d0;*/
+
 }
-#content h1{
-	display:inline;
-	margin-bottom:-50px;
-	
+
+#call_to_action{
+	padding-left:40px;
 }
+#call_to_action h2,h3{
+	margin-bottom:9px;
+	margin-top:9px;
+}
+
 #stats h3{
 	font-size:90%;
 	margin-bottom:50px;
@@ -220,15 +212,26 @@ a {
 #action{
 	margin:0 auto;
 	height:20px;
-	width:400px;
+	width:335px;
 
 }
 
 .my_row{
 	min-width:900px;
-	margin:0 auto;
+
 }
 /*twitter bootstrap--------------------------------*/
+.row>.offset1{margin-left:80px;}
+.row>.offset2{margin-left:140px;}
+.row>.offset3{margin-left:200px;}
+.row>.offset4{margin-left:260px;}
+.row>.offset5{margin-left:320px;}
+.row>.offset6{margin-left:380px;}
+.row>.offset7{margin-left:440px;}
+.row>.offset8{margin-left:500px;}
+.row>.offset9{margin-left:560px;}
+.row>.offset10{margin-left:620px;}
+.row>.offset11{margin-left:680px;}
 
 .row{margin-left:-20px;}.row:before,.row:after{display:table;content:"";}
 .row:after{clear:both;}
@@ -255,9 +258,11 @@ a {
 .span9{width:520px;}
 .span10{width:580px;}
 .span11{width:640px;
-		min-height:300px;
+	}
+.span11 h5{
+	color:#4d4d4d;
+}
 
-		}
 
 /*create fortune*/
 
@@ -265,8 +270,7 @@ a {
 	border-radius:5px;
 	border:1px dashed #2b2a27;
 }
-.create_fortune_field{
-	
+.create_fortune_field{	
 	margin-top:30px;
 	padding-bottom:200px;
 	
@@ -275,12 +279,10 @@ a {
 	letter-spacing:2px;
 }
 textarea{
-
-	margin-bottom:20px;
+	margin-bottom:30px;
 }
 
 .create_fortune_btn{
-
 	border-radius:15px;
 	border:none;
 	background-color:#2b2a27;
@@ -317,23 +319,28 @@ textarea{
 /*modal--------------------------------*/
 
 
-.modalLogIn, .modalSignUp{
-	border-radius:1em 1em 1em 1em;
-	font-size:140%;
-	letter-spacing:1px;
-	background-color:#2b2a27;
-	color:white;
-	width:150px;
-	height:52px;
-	border:none;
-	cursor:pointer;
+.modalSignUp{
+		background-color: #2B2A27;
+	    border: none;
+	    border-radius: 1em 1em 1em 1em;
+	    color: white;
+	    cursor: pointer;
+	    font-size: 90%;
+	    height: 52px;
+	    letter-spacing: 1px;
+	    margin-left: 150px;
+	    width: 198px;
 }
 
 /*modal buttons--------------------------------*/
-
-#sign_up #log_in, a:hover {
-	color:#0593d0;
+#sign_up{
+	margin-top:50px;
+	
 }
+#sign_up:hover {
+	background-color:#0593d0;
+}
+
 #log_in{
 	float:right;
 }
@@ -344,14 +351,20 @@ textarea{
 
 /*live feed--------------------------------*/
 
+#feed{
+	margin-top:50px;
+	
+}
+
 #feed_banner{
 	width:340px;
 	height:400px;
-	margin-top:0px;
+
 	background-image:url('../images/fortune_feed.png');
 	background-repeat:no-repeat;
 	background-position:0 -10px;
 	float:left;
+
 
 }
 #sm_feed_banner{
@@ -370,10 +383,13 @@ textarea{
 	min-width:350px;
 	max-width:450px;
 	min-height:300px;
-	padding-top:0px;
 	margin-left:260px;
-	padding-bottom:200px;
+	padding-top:0px;
+	margin-bottom:200px;
+	padding-bottom:50px;
 	font-family:"Garamond", serif;
+	border-bottom:2px solid #0593d0
+	
 }
 #sm_feed_banner p{
 	color:white;
@@ -413,10 +429,11 @@ textarea{
 	min-width:500px;
 	max-width:500px;
 	min-height:500px;
-	margin-top:10px;
 	margin-left:400px;
-	padding-bottom:200px;
+    margin-bottom:200px;
+	padding-bottom:50px;
 	font-family:"Garamond", serif;
+	border-bottom:2px solid #0593d0;
 }
 
 #live_feed ul{

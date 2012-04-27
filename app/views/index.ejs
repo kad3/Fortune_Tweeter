@@ -1,91 +1,201 @@
-                     <div id="content">				
-                         <h3>Do you have what it takes to become a Tweeter Fortune Teller?<br />
-					<h1>Yes! </h1><span class="emphasis"> You most certainly do!</span></h3><br /><br />
-					<h1><span class="blue">Become a member</span> and help make Twitter</h1><br /><br />
-					<h1>an <span class="emphasis">even more </span>FUN and MAGICAL place.</h1><br /><br /><br /><br />
-					<div id="action">
-
-						<button class="modalInput" id="log_in" rel="#prompt"><a href=''>Log In</a></button>
-						<button class="modalInput" id="sign_up"rel="#prompt"><a href=''>Sign Up!</a></button>
-
-						<!--modal!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tweeter Fortune Teller</title>
+	<meta name="" content="">
+	<meta name="" content="">
 
 
 
-						<!-- user input dialog -->
-						<div class="modal" id="prompt">
+	<link href='../public/stylesheets/style.css' rel="stylesheet">
+	<!-- <link href="../public/stylesheets/local_bootstrap.css" rel="stylesheet"> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src='../public/javascripts/script.js'></script>	
+	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 
-							<form id="myform">
-								<fieldset>
-									<h3>Sample registration form</h3>
-									<p> Enter bad values and then press the submit button. </p>
 
-									<p>
-										<label>email *</label>
-										<input type="email" name="email" required="required" />
-									</p>
-									<p>
-										<label>website *</label>
-										<input type="url" name="url" required="required" />
-									</p>
-									<p>
-										<label>name *</label>
-										<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30" />
-									</p>
-									<p>
-										<label>age</label>
-										<input type="number" name="age" size="4" min="5" max="50" />
-									</p>
-									<p id="terms">
-										<label>I accept the terms</label>
-										<input type="checkbox" required="required" />
-									</p>
-									<button type="submit">Submit form</button>
-									<button type="reset">Reset</button>
-									<button type="button" class="close"> Cancel </button>
-								</fieldset>
-							</form>
+</head>
+
+<body>
+
+
+	<div id="top_bar">
+		<form id="form">
+
+			<input id="userName" class="logIn" method="" action="" type="text" placeholder="username" > 
+
+			<input id="password" class="logIn" method="" action="" type="text" placeholder="password">
+
+			<input type="button"class="logIn_topbar_btn" value="log in">
+			
+			<p><a href=""> forgot your password?</a></p>
+		</form>
+	</div>
+	<p class="tagLine">brightening our follower's days- one fortune at a time</p>
+	<div id="nav">  
+		<ul class="accordion">
+			<ul class="accordion">
+				<li id="one" class="files">
+					<a href="#one">home</a>
+				</li>
+				<li id="two" class="mail">
+					<a href="#two">about</a>
+					<ul class="sub-menu">
+						<li><a href="#">guidelines</a></li>
+						<li><a href="#">our story</a></li>
+					</ul>
+				</li>
+				<li id="three" class="cloud">
+					<a href="#four">contact</a>
+				</li>
+				<li id="four" class="sign">
+					<a href="#three">@tfortuneteller</a>
+				</li>
+			</ul>
+
+		</div>
+		<div id="container">
+
+			<div id="main_dashboard">
+
+
+				<div id="fortune_img">
+				</div>
+
+				<h1 class="blue">Do you have what it takes?</h1>
+				<div id="dashboard_content">
+					<div class="row my_row">
+						<div class="span4">
+				
+							<p ><h3 class="emphasis">- create fortunes and watch them go out!<span class="blue"></span></h3>
+								<h3 class="emphasis">- earn points when we tweet your fortunes!<span class="blue"></span></h3>
+								<h3 class="emphasis">- answer questions tweeted in!<span class="blue"></span></h3>
+								<h3><span class="blue emphasis">- <a class="blue" href="">find out how to become an awesome Tweeter Fortune Teller!</a></span></h3>
+							</p>
+
 
 
 						</div>
-						<!--modal!-->
+						<div class="span10" id="call_to_action">
+
+							<h3>Do you have what it takes to become a Tweeter Fortune Teller?</h3>
+													<h2>Yes! <span class="emphasis"> You most certainly do!</span></h2>
+													<h2><span class="blue">Become a member</span> and help make Twitter</h2>
+													<h2>an <span class="emphasis">even more </span>FUN and MAGICAL place.</h2>
+							
+
+						</div>
+						<div id="action">
+
+							
+							<button class="modalSignUp" id="sign_up"rel="#prompt_one"><a href=''>Sign Up or Log In with Twitter!</a></button>
+
+							<!--modal!-->
+
+
+
+						
+						<!-- user input dialog -->
+						<div class="modal" id="prompt_one">
+
+							<form id="myform">
+								<fieldset>
+									<h3>Sign Up!</h3>
+
+									<label>email *</label>
+									<input type="email" name="email" required="required" />
+								</p>
+								<p>
+									<label>username*</label>
+									<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30"required="required" />
+								</p>
+								<p>
+									<label>password *</label>
+									<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="10" />
+								</p>
+								<p>
+									<label>age</label>
+									<input type="number" name="age" size="4" min="5" max="50" />
+								</p>
+								<p id="terms">
+									<label>I accept the terms</label>
+									<input type="checkbox" required="required" />
+								</p>
+								<button type="submit">Submit form</button>
+								<button type="reset">Reset</button>
+								<button type="button" class="close"> Cancel </button>
+							</fieldset>
+						</form>
+
 
 					</div>
-					<span>or</span>
+					<!--modal!-->
 
-				</div>	
+				</div>
+						
+					</div>	
+					
+
+		</div>	
+
+	</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="feed">
+<div id="feed_banner">
+	<p>fortunes going out LIVE!</p>
+	<h1>@ fortune feed </h1>
+</div>
+<div id="live_feed">
+
+	<ul>
+		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
+		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
+		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
+		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
+
+
+	</ul>
+</div>
+</div>
+<div id="footer">
+	<div class="row footer_row">
+
+		<span class="span11">
+			<p><h2>Our mission is to make Twitter a better place, one fortune at a time.</h2></p>
+			<p><h5>&copy;2012 Tweeter Fortune Teller</h5></p>
+			<div class="span8 my_span10">
+
+
+				<div class="social_icons">
+					<p id="footer_tags"><span class="footer_tags"><a href="">about </a> </span><span class="footer_tags"><a href=""> terms & conditions </a></span><span class="footer_tags"><a href=""> contact us </a></span></p>
+					<h3>follow us on the web</h3>
+					<a alt="facebook.com"title="facebook" target="_blank" href="http://www.facebook.com"class="facebook"></a>
+					<a alt="twitter.com"title="twitter" target="_blank" href="http://www.twitter.com"class="twitter"></a>
+					<a alt="linkedin.com"title="linked in" target="_blank" href="http://www.linkedin.com"class="linkedin"></a>
+					<a alt="github.com"title="git hub" target="_blank" href="http://www.github.com"class="github"></a>
+				</div>
+
 
 			</div>
-			<div id="feed_banner">
-				<p>fortunes going out LIVE!</p>
-				<h1>@ fortune feed </h1>
-			</div>
-			<div id="live_feed">
-           <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-           <script>
-             new TWTR.Widget({
-               version: 2,
-               type: 'profile',
-               rpp: 15,
-               interval: 30000,
-               width: 'auto',
-               height: 650,
-               theme: {
-                 shell: {
-                   background: '#333333',
-                   color: '#ffffff'
-                 },
-                 tweets: {
-                   background: '#eeeeed',
-                   color: '#000000',
-                   links: '#a6a6a6'
-                 }
-               },
-               features: {
-                 scrollbar: false,
-                 loop: false,
-                 live: true,
-                 behavior: 'all'
-               }
-             }).render().setUser('FortuneTest').start();
-          </div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+</body>
+
+</html>
