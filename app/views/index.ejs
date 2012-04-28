@@ -150,18 +150,34 @@
 	<h1>@ fortune feed </h1>
 </div>
 <div id="live_feed">
-
-	<ul>
-		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-		<li id="fortunes"><h1 class="user">@bekahdavid</h1><span class="tweet">a shooting star tonight will bring you good luck tomorrow!</span></li>
-		<li id="fortunes"><h1 class="user">@semmypurewal</h1><span class="tweet">you will soon witness a miracle</span></li>
-
-
-	</ul>
+            <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+               new TWTR.Widget({
+                  version: 2,
+                  type: 'profile',
+                  rpp: 6,
+                  interval: 30000,
+                  width: 'auto',
+                  height: 300,
+                  theme: {
+                     shell: {
+                     background: '#333333',
+                     color: '#ffffff'
+                  },
+                  tweets: {
+                     background: '#eeeeed',
+                     color: '#000000',
+                     links: '#a6a6a6'
+                  }
+               },
+               features: {
+                  scrollbar: false,
+                  loop: false,
+                  live: true,
+                  behavior: 'all'
+               }
+            }).render().setUser('FortuneTest').start();
+         </script>
 </div>  <!--end feed-->
 </div>  <!--end live feed-->
 <div id="footer">
