@@ -8,7 +8,7 @@ exports.index = function(req, res){
 };
 
 exports.dashboard = function(req, res){
-  res.render('dashboard', { title: 'Tweeter Fortune Teller'})
+  res.render('dashbord', { title: 'Tweeter Fortune Teller'})
 };
 
 exports.add_fortune = function(req, res) {
