@@ -63,6 +63,14 @@ a {
 	color:#fff;
 
 }
+
+#form p > a:hover{
+	color:#0593d0;
+}
+
+#user a:hover{
+	color:#0593d0;
+}
 .user_bar p {
 	color:#fff;
 	font-size:75%;
@@ -109,7 +117,7 @@ a {
 /*nav --------------------------------*/ 
 
 #nav {
-	margin-top:150px;
+	margin-top:130px;
 	width:200px;
 	height:100%;
 	background-color:#2b2a27;
@@ -169,8 +177,8 @@ a {
 	height:100px;
 	background-image:url('../images/fortune.png');
 	background-repeat:no-repeat;
-	margin-left: 475px;
-    margin-top: -52px;
+    margin-left: 469px;
+    margin-top: -59px;
 	
 }
 
@@ -185,7 +193,7 @@ a {
 #dashboard_content{
 	margin:0 auto;
 	margin-left:30px;
-	padding-top:30px;
+	padding-top:15px;
 	width:1000px;
 	min-height:300px;
 	padding-left:35px;
@@ -194,7 +202,17 @@ a {
 }
 
 #call_to_action{
-	padding-left:40px;
+	padding-left:20px;
+}
+
+#call_to_action, .span10{
+
+}
+#call_to_action h5{
+ 	font-size: 135%;
+    font-weight: 400;
+    margin-bottom: 9px;
+    margin-left: 60px;
 }
 #call_to_action h2,h3{
 	margin-bottom:9px;
@@ -211,10 +229,9 @@ a {
 
 #action{
 	margin:0 auto;
-	height:20px;
-	width:335px;
 
 }
+
 
 .my_row{
 	min-width:900px;
@@ -241,14 +258,15 @@ a {
 .span3{width:160px;}
 .span4{width:220px;
 		min-height:300px;
-		padding-right:30px;
+		padding-right:20px;
+		padding-left: 35px;
 		line-height:150%;
 		border-right:2px dashed #fff ;	
 	}
 
 .span5{width:280px;
 		min-height:300px;
-		padding-right:50px;
+		padding-left:35px;
 		line-height:150%;
 		}
 
@@ -272,8 +290,7 @@ a {
 }
 .create_fortune_field{	
 	margin-top:30px;
-	padding-bottom:200px;
-	
+	padding-bottom:200px;	
 }
 .create_fortune_field h1{
 	letter-spacing:2px;
@@ -281,7 +298,6 @@ a {
 textarea{
 	margin-bottom:30px;
 }
-
 .create_fortune_btn{
 	border-radius:15px;
 	border:none;
@@ -300,16 +316,20 @@ textarea{
 .blue{
 	color:#0593d0;
 }
-
 .emphasis{
 	font-style:italic;
 }
 
 .white{
-	color:#fff;
-	
+	color:#fff;	
+}
+.thin{
+	font-weight:200;
 }
 
+.small{
+	font-size:50%;
+}
 .yellow{
 	color:#feebae;
 }
@@ -320,52 +340,59 @@ textarea{
 
 
 .modalSignUp{
-		background-color: #2B2A27;
-	    border: none;
-	    border-radius: 1em 1em 1em 1em;
+		background-image:url('../images/twitter_small.png');
+		background-position:left center;
+		background-repeat:no-repeat;
+		background-color:#0593d0;
+	    border:none;
+	    border-radius: 10px;
 	    color: white;
 	    cursor: pointer;
-	    font-size: 90%;
-	    height: 52px;
+	    font-size: 110%;
+	    height:40px;
 	    letter-spacing: 1px;
-	    margin-left: 150px;
-	    width: 198px;
+		text-align:right;
+	    width: 137px;
+}
+/*modal buttons--------------------------------*/
+
+#sign_up:hover {
+	text-shadow:1px 1px #2b2a27;
+	background-color:#fff;
+/*	border: 1px dashed #0593d0;*/
 }
 
-/*modal buttons--------------------------------*/
-#sign_up{
-	margin-top:50px;
-	
-}
-#sign_up:hover {
-	background-color:#0593d0;
+#log_in:hover{
+/*	border: 1px dashed #0593d0;*/
+	text-shadow:1px 1px #2b2a27;
+	background-color:#fff;
 }
 
 #log_in{
 	float:right;
+	margin-right:260px;
+	margin-top:10px;
+	/*padding-right: 10px;*/
 }
 
 #sign_up{
 	float:left;
+	margin-left:150px;
+	margin-top:10px;
 }
 
 /*live feed--------------------------------*/
 
 #feed{
 	margin-top:50px;
-	
 }
-
 #feed_banner{
 	width:340px;
 	height:400px;
-
 	background-image:url('../images/fortune_feed.png');
 	background-repeat:no-repeat;
 	background-position:0 -10px;
 	float:left;
-
-
 }
 #sm_feed_banner{
 	margin-top:20px;
@@ -388,43 +415,35 @@ textarea{
 	margin-bottom:200px;
 	padding-bottom:50px;
 	font-family:"Garamond", serif;
-	border-bottom:2px solid #0593d0
-	
+	border-bottom:2px solid #0593d0	
 }
 #sm_feed_banner p{
 	color:white;
 	font-size:60%;
 	font-style:italic;
 	margin-left:20px;
-	margin-top:15px;
-	
+	margin-top:15px;	
 }
 #sm_feed_banner h1{
 	font-size:180%;
 	font-weight:100;
 	letter-spacing:2px;
 	margin-left:14px;
-	margin-top:20px;
-	
+	margin-top:20px;	
 }
-
 #feed_banner p{
 	color:white;
 	font-size:80%;
 	font-style:italic;
 	margin-left:20px;
-	margin-top:10px;
-	
+	margin-top:10px;	
 }
 #feed_banner h1{
 	font-weight:100;
 	letter-spacing:3px;
 	margin-left:17px;
-	margin-top:25px;
-	
+	margin-top:25px;	
 }
-
-
 #live_feed{	
 	min-width:500px;
 	max-width:500px;
@@ -462,12 +481,9 @@ textarea{
 }
 
 .tweet{
-	margin-left:60px;
-	
+	margin-left:60px;	
 	
 }
-
-
 
 /*accordion--------------------------------*/
 .accordion,
@@ -507,9 +523,7 @@ textarea{
 
 .accordion > li:target > a,
 .accordion > li > a.active {
-	color:#0593d0;
-	
-	
+	color:#0593d0;	
 
 }
 
@@ -528,11 +542,6 @@ textarea{
 	border-radius:50px;
 
 }
-
-
-
-
-
 
 
 /* Sub Menu */
@@ -605,7 +614,7 @@ textarea{
 
 }
 
-.my_span10 h3{
+.my_footer_span8 h3{
 	color:#fff;
 	margin-left:40px;
 	font-weight:900;
