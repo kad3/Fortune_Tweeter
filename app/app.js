@@ -34,6 +34,7 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
+app.get('/dashboard', routes.dashboard);
 
 app.get('/add', routes.add_fortune);
 
