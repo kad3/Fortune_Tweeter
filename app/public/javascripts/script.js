@@ -1,8 +1,6 @@
 $(document).ready(function() {
 	
-
-	
-	
+			$('#created_fortune_pending').hide();
 
 			// accordion menu
 			

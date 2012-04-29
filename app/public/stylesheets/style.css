@@ -202,7 +202,7 @@ a {
 }
 
 #call_to_action{
-	padding-left:20px;
+	text-align:center;
 }
 
 #call_to_action, .span10{
@@ -212,9 +212,9 @@ a {
  	font-size: 135%;
     font-weight: 400;
     margin-bottom: 9px;
-    margin-left: 60px;
+    
 }
-#call_to_action h2,h3{
+#call_to_action h2,h3,h4{
 	margin-bottom:9px;
 	margin-top:9px;
 }
@@ -284,6 +284,13 @@ a {
 
 /*create fortune*/
 
+#created_fortune_pending {
+	border-radius:10px;
+	padding:10px;
+	border:2px dashed white;
+	color:#0593d0;
+}
+
 #fortune_enter{
 	border-radius:5px;
 	border:1px dashed #2b2a27;
@@ -305,10 +312,13 @@ textarea{
 	font-size:100%;
 	width:150px;
 	height:25px;
-	
+	cursor:pointer;
 }
 .create_fortune_btn a{
 		color:#feecb3;
+}
+.create_fortune_btn:hover{
+	background-color:#0593d0;
 }
 
 /*specialty styles--------------------------------*/
@@ -324,7 +334,7 @@ textarea{
 	color:#fff;	
 }
 .thin{
-	font-weight:200;
+	font-weight:400;
 }
 
 .small{
@@ -682,7 +692,6 @@ textarea{
 }
 
 #footer{
-
 	width:100%;
 	height:500px;
 	background-color:#0593d0;
