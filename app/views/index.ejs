@@ -8,9 +8,9 @@
 
 
 
-	<link href='../public/stylesheets/style.css' rel="stylesheet">
+	<link href='/stylesheets/style.css' rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src='../public/javascripts/script.js'></script>	
+	<script src='/javascripts/script.js'></script>	
 	<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 
 
@@ -34,8 +34,7 @@
 	
 	<p class="tagLine">brightening our follower's days- one fortune at a time</p>
 	
-	<div id="nav">  
-		<ul class="accordion">
+	<div id="nav">
 			<ul class="accordion">
 				<li id="one" class="files">
 					<a href="#one">home</a>
@@ -51,7 +50,7 @@
 					<a href="#four">contact</a>
 				</li>
 				<li id="four" class="sign">
-					<a href="#three">@tfortuneteller</a>
+					<a class="actual-link" href="http://twitter.com/tfortuneteller/">@tfortuneteller</a>
 				</li>
 			</ul>
 
@@ -99,16 +98,16 @@
 						<!-- user input dialog -->
 						<div class="modal" id="prompt_one">
 
-							<form id="myform">
+							<form id="myform" action="/dashboard">
 								<fieldset>
 									<h3>Sign Up!</h3>
 
 									<label>email *</label>
-									<input type="email" name="email" required="required" />
+									<input type="email" name="email" />
 								</p>
 								<p>
 									<label>username*</label>
-									<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30"required="required" />
+									<input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30" />
 								</p>
 								<p>
 									<label>password *</label>
@@ -120,9 +119,9 @@
 								</p>
 								<p id="terms">
 									<label>I accept the terms</label>
-									<input type="checkbox" required="required" />
+									<input type="checkbox" />
 								</p>
-								<button type="submit">Submit form</button>
+								<input type="submit" value="Submit form" />
 								<button type="reset">Reset</button>
 								<button type="button" class="close"> Cancel </button>
 							</fieldset>
@@ -176,7 +175,7 @@
                   live: true,
                   behavior: 'all'
                }
-            }).render().setUser('FortuneTest').start();
+            }).render().setUser('tfortuneteller').start();
          </script>
 </div>  <!--end feed-->
 </div>  <!--end live feed-->

@@ -11,13 +11,24 @@ var t = new twit({
 	access_token_secret: cred.access_token_secret
 });
 
+var followers = [
+	"@bekahdavid",
+	"@curvetheory",
+	"@yokoono",
+	"@Billy_Manno",
+	"@Tanika_Girauard",
+	"@Camelia_Capote",
+	"@Ona_Kuhnle"
+];
+
 /* creates an interval which tweets with a given delay.
  * tweets are pulled from fortunes.js
  */
 function intervalTweet(delay) {
 
 	setInterval(function() {	
-		var s = fortunes[parseInt(Math.random()*fortunes.length)];
+		var user = followers[parseInt(Math.random()*followers.length)];
+		var s = '' + user + ' ' + fortunes[parseInt(Math.random()*fortunes.length)];
 
 		t.post('statuses/update', 
 			{

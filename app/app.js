@@ -8,7 +8,7 @@ var express = require('express')
   , rtweeter = require('./random_tweeter.js')
   , cf = require('./cloudfoundry.js');
 
-var randomTweeter = new rtweeter(21600);
+//var randomTweeter = new rtweeter(60);
 
 var app = module.exports = express.createServer();
 
@@ -36,7 +36,7 @@ app.configure('production', function(){
 app.get('/', routes.index);
 app.get('/dashboard', routes.dashboard);
 
-app.get('/add', routes.add_fortune);
+app.get('/create_fortune', routes.create_fortune);
 
 app.listen(cf.port||3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

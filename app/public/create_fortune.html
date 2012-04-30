@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title><%- title %></title>
+	<title>Tweeter Fortune Teller</title>
 	<meta name="" content="">
 	<meta name="" content="">
 
@@ -18,10 +18,9 @@
 
 <body>
 
-
 	<div id="top_bar">
 
-		<span class="logo"><a href=""></a></span>
+		<span class="logo"><a href="/dashboard"></a></span>
 
 		<div id="user" class="user_bar">
 			<span class="userlevel_display">Level <span class="blue">4 </span>fortune teller </span>
@@ -36,10 +35,10 @@
 			<ul class="accordion">
 				<ul class="accordion">
 					<li id="one" class="">
-						<a class="actual-link" href="/dashboard">my dashboard</a>
+						<a class='actual-link' href="/dashboard">my dashboard</a>
 					</li>
 					<li id="two" class="">
-						<a class="actual-link" href="create_fortune.html">create a fortune</a>
+						<a href="#two">create a fortune</a>
 
 					</li>
 					<li id="three" class="">
@@ -54,13 +53,48 @@
 						</ul>
 					</li>
 					<li id="five" class="">
-						<a class="actual-link" href="https://twitter.com/#!/tfortuneteller">@tfortuneteller</a>
+						<a href="#three">@tfortuneteller</a>
 					</li>
 				</ul>
 
 			</div> <!--end nav-->
-			
-			<%- body %>
+				<div id="container">
+
+							<div id="main_dashboard">
+
+								<div id="fortune_img">
+								</div>
+
+						<div id="create_fortune_content">
+
+
+							<div class="create_fortune_field">
+								<h1 class="blue">create a fortune!</h1>
+								
+								<span id="created_fortune_pending" class="blue emphasis thin">>> your fortune has been added to the fortune bank!</span>
+							
+							<br />
+							<br />
+								<h3>enter fortune here</h3>
+								<textarea id="fortune_enter" type="text" rows="10" cols="30">
+
+								</textarea>
+
+								<div id="action">
+
+									<button class="create_fortune_btn" id="fortuneCreate_btn" rel=""><a href=''>create fortune</a></button>
+
+								</div>  <!--end action-->
+
+							</div>  <!--end create_fortune_field-->
+
+						</div>	<!--end fortune_content-->
+
+					</div>  <!--end main_dashboard-->
+
+
+				</div>  <!--end container-->
+	
 			
 			
 			<div id="footer">

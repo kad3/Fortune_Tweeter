@@ -292,6 +292,7 @@ a {
 }
 
 #fortune_enter{
+	text-align:left;
 	border-radius:5px;
 	border:1px dashed #2b2a27;
 }
@@ -303,6 +304,7 @@ a {
 	letter-spacing:2px;
 }
 textarea{
+	text-align:left;
 	margin-bottom:30px;
 }
 .create_fortune_btn{
@@ -420,7 +422,7 @@ textarea{
 	min-width:350px;
 	max-width:450px;
 	min-height:300px;
-	margin-left:260px;
+	margin-left:360px;
 	padding-top:0px;
 	margin-bottom:200px;
 	padding-bottom:50px;
@@ -528,7 +530,7 @@ textarea{
 }
 
 .accordion > li:hover > a{
-	color:#fff;
+	color:#0593d0;
 }
 
 .accordion > li:target > a,

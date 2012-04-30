@@ -4,13 +4,13 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Tweeter Fortune Teller'})
+  res.render('index', { title: 'Tweeter Fortune Teller', layout: false})
 };
 
 exports.dashboard = function(req, res){
   res.render('dashbord', { title: 'Tweeter Fortune Teller'})
 };
 
-exports.add_fortune = function(req, res) {
-	res.render('add-fortune', {});
+exports.create_fortune = function(req, res) {
+	res.render('createFortune', {});
 };
