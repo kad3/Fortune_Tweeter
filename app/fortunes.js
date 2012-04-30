@@ -40,6 +40,5 @@ exports.fortunes = [
 "Don't Worry, Be Happy.\n		-- Meher Baba",
 "Don't worry.  Life's too long.\n		-- Vincent Sardi, Jr.",
 "Excellent day for putting Slinkies on an escalator.",
-"Excellent time to become a missing person.",
 "Executive ability is prominent in your make-up.",
 ]
